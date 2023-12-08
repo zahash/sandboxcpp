@@ -5,8 +5,8 @@ rm -f main
 g++ \
     -Wall -Wextra -Werror \
     -o main main.cpp \
-    -I./external/include/ -L./external/lib/ \
-    -l:libSDL2.a \
+    # -I./external/include/ -L./external/lib/ \
+    # -l:libSDL2.a \
 
 
 # The -I flag tells g++ where to look for the header files
