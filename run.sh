@@ -6,7 +6,7 @@ g++ \
     -Wall -Wextra -Werror \
     -o main main.cpp \
     -I./external/include/ -L./external/lib/ \
-    -l:libglfw3.a -lGL \
+    -l:libglfw3.a -l:libGLEW.a -lGL \
 
 
 # The -I flag tells g++ where to look for the header files
