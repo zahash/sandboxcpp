@@ -1,6 +1,6 @@
-#include "hellogl.h"
+#include "hello_sdl2.h"
 
 int main(void)
 {
-    glrun();
+    sdl_run();
 }

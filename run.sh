@@ -2,12 +2,13 @@ set -e
 
 rm -f main
 
+# -std=c++2b enables experimental c++23 support
 g++ \
+    -std=c++2b \
     -Wall -Wextra -Werror \
     -o main main.cpp \
     -I./external/include/ -L./external/lib/ \
-    -l:libglfw3.a -l:libGLEW.a -lGL \
-
+    -lSDL2
 
 # The -I flag tells g++ where to look for the header files
 # The -L flag where to look for the library
